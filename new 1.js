@@ -45,7 +45,7 @@
 	var password = document.getElementById("password").value;
 	if ( uname == "IIT406" && password == "LETRAN"){
 	alert ("Login successfully");
-	window.location = "https://lamiraran.github.io/luismiraran/Carousel.html"; 
+	window.location.href = "https://lamiraran.github.io/luismiraran/Carousel.html"; 
 	return false;
 	}
 	else{
