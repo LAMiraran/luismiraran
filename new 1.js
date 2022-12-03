@@ -45,7 +45,7 @@
 	var password = document.getElementById("password").value;
 	if ( uname == "IIT406" && password == "LETRAN"){
 	alert ("Login successfully");
-	window.location = "file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/Carousel.html"; 
+	window.location = "https://lamiraran.github.io/luismiraran/Carousel.html"; 
 	return false;
 	}
 	else{
