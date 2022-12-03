@@ -1,0 +1,198 @@
+<!-- IIT406 =Computer Programming 3 -->
+<!-- Luis Aldrin M. Miraran
+	 IT Student
+	 1st Semester, AY 2022-2023 -->
+<!-- Midterm Examination (Gallery) -->
+
+<!DOCTYPE html>
+<html lang='en'>
+<html>
+<head>
+	<title> Gallery </title>
+	<style>
+	td{
+		border-style:solid;
+		border-width:8px;
+		border-color:black;
+		background-color:mediumaquamarine;
+		font-family:cursive;
+		text-align:justify;
+	}
+	figcaption{
+		padding:10px;
+		background-color:teal;
+		color:lightyellow;
+	}
+	img{
+		width:100%;
+		height:100%;
+	}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- Carousel Format -->
+	<h1 style="background-color:teal; color:lightyellow; font-family:cursive;
+	font-weight:bold; border:10px solid black"><center> Welcome to La Miraran Galleria! </center></h1>
+	<h1><center><b> Photo Gallery </center></b></h1>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+		<li data-target="#myCarousel" data-slide-to="5"></li>
+		<li data-target="#myCarousel" data-slide-to="6"></li>
+		<li data-target="#myCarousel" data-slide-to="7"></li>
+		<li data-target="#myCarousel" data-slide-to="8"></li>
+		<li data-target="#myCarousel" data-slide-to="9"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
+		<div class="item active">
+		  <img src="imageshtml/familyphoto.jpg" alt="family photo">
+		  <div class="carousel-caption">
+			<p> Our very first family photo ever since we got home from Qatar. </p>
+		  </div>
+		</div>
+
+		<div class="item">
+		  <img src="imageshtml/reunionphoto.jpg" alt="reunion photo">
+		  <div class="carousel-caption"
+			<p>  Family reunion pic with our cousins! </p>
+		  </div>
+		</div>
+
+		<div class="item">
+		  <img src="imageshtml/wedding.jpg" alt="wedding photo">
+		  <div class="carousel-caption">
+			<p> Our family photo at my sister's wedding! <p>
+		  </div>
+		</div>
+		
+		<div class="item">
+		  <img src="imageshtml/bdayphoto.jpg" alt="bday photo">
+		  <div class="carousel-caption">
+			<p> Celebrating my mother's 61st Birthday. #TheAlley <p>
+		  </div>
+		</div>
+		
+		<div class="item">
+		  <img src="imageshtml/classpic.jpg" alt="class pic">
+		  <div class="carousel-caption">
+			<p> Class 2020 picture taking. Sadly, this was our last class picture before the pandemic. <p>
+		  </div>
+		</div>
+		
+		<div class="item">
+		  <img src="imageshtml/bdaysurprise.jpg" alt="bday surprise">
+		  <div class="carousel-caption">
+			<p> An unexpected birthday surprise from my sweet girl-friends. hehehehe <p>
+		  </div>
+		</div>
+		
+		<div class="item">
+		  <img src="imageshtml/dancecompetition.jpg" alt="dance competition">
+		  <div class="carousel-caption">
+			<p> My first time winning an award in a dance competition. 1st place PowerHouse! <p>
+		  </div>
+		</div>
+		
+		<div class="item">
+		  <img src="imageshtml/publication.jpg" alt="publication">
+		  <div class="carousel-caption">
+			<p> Research publication pic with my research adviser and groupmates. <p>
+		  </div>
+		</div>
+		
+		<div class="item">
+		  <img src="imageshtml/sinedate.jpg" alt="sine-date">
+		  <div class="carousel-caption">
+			<p>  A sine-date with my friends on my birthday. <p>
+		  </div>
+		</div>
+		
+		<div class="item">
+		  <img src="imageshtml/firstmeet.jpg" alt="first meet">
+		  <div class="carousel-caption">
+			<p> My first pic with my IT classmates! lovelots! <p>
+		  </div>
+		</div>
+	</div>
+
+	<!-- Left and right controls -->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Next</span>
+	</a>
+	</div>
+	<center>
+	<table cellspacing='100' cellpadding='20'>
+		<tr>
+			<!-- Video Gallery with the use of figure, figure caption, and iframe attributes -->
+			<th colspan='2'><h2><b><center> Video Gallery </center></b></h2></th>
+		</tr>
+		<tr>
+			<td>
+				<figure>
+				<center>
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/aR-KAldshAE" 
+				title="Warriors | Season 2020 Cinematic - League of Legends (ft. 2WEI and Edda Hayes)" 
+				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+				picture-in-picture" allowfullscreen></iframe></center>
+				<figcaption> League of Legends cinematic showcases the creative output that the Riot Games 
+				invested in.  A chilling music score, a breathtaking visuals, and a captivating lore. 
+				Indeed, they are one of the most famous game companies that dominates the gaming industry. </figcaption>
+				</figure>
+			</td>
+			<td>
+				<figure>
+				<center>
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/4oBpaBEMBIM"
+				title="Character Demo - "Zhongli: The Listener" | Genshin Impact" frameborder="0" allow="accelerometer; 
+				autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+				<figcaption> A Character trailer that tells a story of a geo archon as he faces his last contract to
+				end all contracts. This trailer truly displays a fluid and inventive style of art that really attracted
+				fans, including me, that made us fall in love and invested to this character. </figcaption>
+				</figure>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<figure>
+				<center>
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/U9e3MFZI3zE" 
+				title="Animated Short [Everlasting Flames] Japanese-Dubbed Edition - Honkai Impact 3rd" frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+				<figcaption> One of my favorite games, Honkai Impact 3rd's animation of Everlasting Flames showcased
+				a unique and vibrant color scheme in its art design. Kiana Kaslana embraced her will to fight for 
+				everything that's beautiful in the world. </figcaption>
+				</figure>
+			</td>
+			<td>
+				<figure>
+				<center>
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/Q-b6rdyIJsY" 
+				title="Will of the Herrscher - Honkai Impact 3rd Animations [Song: Befall]" frameborder="0" allow="accelerometer; 
+				autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+				<figcaption> Kiana Kaslana's succumb to her alter ego, Herrscher of the Void, displays a thrilling 
+				and adrenaline-rushing animation short. I must say, I got addicted to its musical score that truly
+				gave me the chills as she annihilated those who stand in her way. </figcaption>
+				</figure>
+			</td>
+		</tr>
+	</table>
+	</center>
+</body>
+</html>
