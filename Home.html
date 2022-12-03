@@ -1,0 +1,513 @@
+<!-- IIT406 = Computer Programming 3 -->
+<!-- Luis Aldrin M. Miraran
+	 IT Student
+	 1st Semester, AY 2022-2023 -->
+<!-- Final Exam - Home Page -->
+
+<!DOCTYPE html>
+<html lang='en' dir="ltr">
+<html>
+<head>
+	<title> Home Page </title>
+	<!-- Using of viewport format to vary sizes according to device width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Character set that covers all characters and symbols across the world -->
+	<meta charset="utf-8">
+	<!-- style sheet that is used for icons and css format styles -->
+	<link rel="stylesheet" href="FinalExamFormat.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- The use of script function to various website properties
+	from clock, sumbit validation, and dropdown menu-->
+	<script src="new 1.js"></script>
+<head>
+<body onload="initClock()">
+	<!-- website header displaying the real time clock and logos -->
+	<header>
+		<a href="#" style="display:flex;">
+		<img src="imageshtml/coatOfArms.png">
+		<img src="imageshtml/philLogo.png">
+		</a>
+		
+		<div class="datetime">
+			<div class="date">
+				<span id="dayname">Day</span>,
+				<span id="month">Month</span>
+				<span id="daynum">00</span>,
+				<span id="year">Year</span>
+			</div>
+			<div class="time">
+				<span id="hour">00</span>:
+				<span id="minutes">00</span>:
+				<span id="seconds">00</span>
+				<span id="period">AM</span>
+			</div>
+		</div>
+	</header>
+	
+	<!-- the main division of content of my html -->
+	<main>
+		<!-- sidebar w/ icons features with the application of 
+		scripting for the drop down button and menu. This directs 
+		you to different sections of the page and other html pages -->
+		<div class="sidenav">
+			<button class="dropdown-btn"> About Philippines 
+			<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="#history"> History </a>
+				<a href="#geography"> Geography and Environment </a>
+				<a href="#demographics"> Demographics </a>
+				<a href="#culture"> Culture </a>
+			</div>
+			<button class="dropdown-btn"> Tourist Attractions 
+			<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="#luzon"> Luzon </a>
+				<a href="#visayas"> Visayas </a>
+				<a href="#mindanao"> Mindanao </a>
+			</div>
+			<a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/VideoGallery.html"><i class="fa fa-fw fa-youtube-play"></i> Video Gallery </a>
+			<a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/LogIn.html"><i class="fa fa-fw fa-user"></i> Log-In </a>
+			<a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/ContactUs.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+		</div>
+		
+		<!-- Example of scripting for my dropdown menu-->
+		<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+				dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+		  });
+		}
+		</script>
+		
+		<!-- Section for my history content arranged in a table format
+		that showcases different historical periods -->
+		<section id="history">
+			<div class="section-inner">
+				<h1> History of the Philippines </h1>
+				<br>
+				<table cellspacing=10px>
+					<tr>
+						<td>
+							<img src="imageshtml/precolonial.png" alt="Pre-Colonial Philippines">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3 style="text-indent:20px;"> Pre-Colonial Philippines </h3>
+							<blockquote>
+							<p> The Philippines is believed to have Austronesian roots according to the similarities of migration and 
+							language patterns of neighboring countries such as Indonesia and Malaysia. Early settlements were divided 
+							and formed small communities known as “Barangays”; These barangays were led by a Datu. These barangays were 
+							linked to each other by kinship or in relation with other communities that formed allegiances. Since communities 
+							are divided, Filipinos haven’t grasped the sense of Nationalism. </p>
+							</blockquote>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="imageshtml/spanish.jpg" alt="Pre-Colonial Philippines">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3 style="text-indent:20px;"> Spanish Rule </h3>
+							<blockquote>
+							<p> Ferdinand Magellan’s arrival to the Philippines in 1521 was later continued by Miguel Lopez de Legazpi in 1565 
+							paving the way for power and conversion of religion. The Spanish colony contributed to the progress of the Religion, 
+							Education, and Culture of Filipinos. However, the colonizers abused their power such as the ruling of the Encomienda 
+							System which led to excessive taxation, slavery, and exploitation of resources and land of the locals. Occurrences of 
+							inequality in education, opportunities, and even religion hindered Filipinos. Despite that, in the 1870s the emergence 
+							of Ilustrados, or “enlightened ones” began the Propaganda Movement that fought for equality and freedom of Filipinos. 
+							A notable figure in this movement is Jose Rizal who ignited the Filipinos to initiate the Philippine Revolution. </p>
+							</blockquote>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="imageshtml/american.jpg" alt="Pre-Colonial Philippines">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3 style="text-indent:20px;"> American Rule </h3>
+							<blockquote>
+							<p> After the Spanish Colony yielded (end of the Spanish-American War), rather than giving the Philippines its independence,
+							it ended up in a Philippine-American War due to the Treaty of Paris that states that the Philippines is now claimed by 
+							America. The motivations of the Americans were to have commercial opportunities in Asia. They thought of Filipinos as 
+							having inadequate skills to self-govern and feared that another power (Germany or Japan) might take control of the 
+							Philippines. So, the Americans launched a pacification, benevolent assimilation, that aims to gain the trust of the 
+							Filipinos by giving them self-governance, social reforms, and education rights. In 1946, the U.S. granted the Philippines 
+							its independence. </p>
+							</blockquote>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="imageshtml/japanese.jpg" alt="Pre-Colonial Philippines">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3 style="text-indent:20px;"> Japanese Rule </h3>
+							<blockquote>
+							<p> During WWII, Japan attacked and conquered the Philippines from 1941-1945. Atrocities occurred such as the countless rape 
+							and torture of comfort women, mass murders involving priests, nuns, professionals, and even children, and lastly, the painful 
+							history of the Bataan Death March. February to March 1945, marks the end of the Japanese occupation by the efforts of both 
+							Filipinos and American troops in the Battle of Manila.  </p>
+							</blockquote>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		
+		<!-- Geography section which displays the map of the Philippines 
+		and a text that describes geography and environment of the Philippines -->
+		<section id="geography">
+			<div class="section-inner">
+				<h1> Geography & Environment </h1>
+				<center>
+				<img src="imageshtml/geography.png" alt="Philippine Map">
+				</center>
+				<blockquote>
+				<p> The Philippines consists of more than 7,000 islands (7,640 to be precise) that form an archipelago. The topography of the 
+				Philippines is mountainous and has narrow to large coastal lowlands, depending on each island. The Philippines has divided into 
+				three geographic areas mainly Luzon, Visayas, and Mindanao. The environment/climate of the Philippines is tropical marine which 
+				has a rainy and dry seasonal climate. </p>
+				</blockquote>
+			</div>
+		</section>
+		
+		<!-- Demographics section that displays the demographics of Philippines based on
+		religion, sex, and population count and density -->
+		<section id="demographics">
+			<div class="section-inner">
+				<h1> Demographics </h1>
+				<img src="imageshtml/demographic.png" alt="demographics" style="float:left;">
+				<table>
+					<tr>
+						<th> Population Count (as of Nov. 28, 2022) </th>
+						<td style="text-align:center;"> 113,082,387 </td>
+					</tr>
+					<tr>
+						<th> World Population Rank </th>
+						<td style="text-align:center;"> 13 </td>
+					</tr>
+					<tr>
+						<th> Top 3 City Population Density </th>
+						<td> 
+							<ul>
+								<li> Quezon City (2,761,720) </li>
+								<li> Manila (1,600,000) </li>
+								<li> Caloocan City (1,500,000) </li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th> Median Age </th>
+						<td> 
+							<ul>
+								<li> 24.1% (Total) </li>
+								<li> 23.6 (Male) </li>
+								<li> 24.6 (Female) </li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th> Ethnicity Population Data </th>
+						<td> 
+							<ul>
+								<li> 28.1% (Tagalog) </li>
+								<li> 13.1 (Cebuano) </li>
+								<li> 9% (Ilocano) </li>
+								<li> 49.8% (Others) </li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th> Religion Population Data </th>
+						<td>
+							<ul>
+								<li> 81% (Roman Catholic) </li>
+								<li> 11% (Christian Denominations) </li>
+								<li> 5.6% (Muslim) </li>
+								<li> 2.4% (Others) </li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		
+		<!-- Culture Section that displays pictures and text about Philippine Culture -->
+		<section id="culture">
+			<div class="section-inner">
+				<h1> Culture </h1>
+				<br>
+				
+				<center>
+				<img src="imageshtml/values.jpg" alt="Filipino Values">
+				</center>
+				<h3> Filipino Values </h3>
+				<blockquote>
+				<p> Filipinos are known to uphold many significant values that revolve around and are rooted in relationships and societal obligations. 
+				At early ages, Filipinos are taught to be respectful toward elders; such as saying <i>“po”</i> and <i>“opo”</i> and the <i>“pagmamano”</i> 
+				which is raising the back of the hand of their elders to their foreheads. Filipinos are also known to be loving, incorporating a love 
+				for God, family,and one’s neighbor (the practice of hospitality to guests or strangers). </p>
+				</blockquote>
+				
+				<center>
+				<img src="imageshtml/cuisine.jpg" alt="Filipino Cuisine">
+				</center>
+				<h3> Filipino Cuisine </h3>
+				<blockquote>
+				<p> Filipino Cuisine is heavily influenced by Spanish, Indian, Chinese, and Native flavors ranging from sweet, salty, and flavorful
+				meals that offer a variety of delicacies. Filipinos are known to be heavy eaters; They meal 6 times a day – breakfast, lunch, dinner,
+				and snacks after those meals mentioned. Some popular dishes are <i>Sinigang, Adobo, Lechon,</i> and many more. </p>
+				</blockquote>
+				
+				<center>
+				<img src="imageshtml/tradition.jpg" alt="Filipino Tradition">
+				</center>
+				<h3> Filipino Tradition and Arts </h3>
+				<blockquote>
+				<p> Filipinos celebrate different festivals such as <i>Ati-atihan, Sinulog, Masskara,</i> and many more that focus on the richness of religion,
+				culture, and beliefs. This is usually done with different local delicacies, music, floats, and dances. This also leads us to the richness 
+				of art, literature, and dances of the Philippines. Notable figures are <i>Fernando Amorsolo</i> (Artist - Painter) and <i>Jose Rizal</i> (Writer). </p>
+				</blockquote>
+			</div>
+		</section>
+		
+		<!-- Luzon Section for tourist spots with the use of table, figures, and 
+		figcaptions that helps describe the different sceneries of Luzon -->
+		<section id="luzon">
+			<div class="section-inner">
+				<h1> Tour-list Spots of Luzon </h1>	
+				<table class="tourist-spots">
+					<tr>
+						<td>
+							<center>
+							<h3> Banaue Rice Terraces </h3>
+							<figure>
+							<img src="imageshtml/banaue.jpg" alt="Banaue Rice Terraces" style="max-width:100%; height:auto;">
+							<figcaption><i> Sight the UNESCO World Heritage Site mountain-carved by the Ifugao ancestors! Indeed, 
+							an advanced and unique agricultural set-up. </i></figcaption>
+							</figure>
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+							<h3> Intramuros </h3>
+							<figure>
+							<img src="imageshtml/intramuros.jpg" alt="Intramuros" style="max-width:100%; height:auto;">
+							<figcaption><i> Manila's Historical Monument, the Walled city, the fortress of the Spanish Era. Immerse
+							youself to the prideful history of the Philippines. </i></figcaption>
+							</figure>
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+							<h3> Vigan City </h3>
+							<figure>
+							<img src="imageshtml/vigan.jpg" alt="Vigan City" style="max-width:100%; height:auto;">
+							<figcaption><i> Explore the 16th Century Architecture of Ilocos Sur's Vigan City! It gives the feels
+							of living the beautiful past of the Philippines </i></figcaption>
+							</figure>
+							</center>							
+						</td>
+					</tr>
+				</table>
+		</section>
+		
+		<!-- Visayas Section for tourist spots with the use of table, figures, and 
+		figcaptions that helps describe the different sceneries of Visayas -->
+		<section id="visayas">
+			<div class="section-inner">
+				<h1> Tour-list Spots of Visayas </h1>
+				<table class="tourist-spots">
+					<tr>
+						<td>
+							<center>
+							<h3> Boracay </h3>
+							<figure>
+							<img src="imageshtml/boracay.jpg" alt="Boracay" style="max-width:100%; height:auto;">
+							<figcaption><i> Chill-ax to the mesmerizing beauty of the crystal clear white sand beaches! From
+							island hopping to sea diving and many more. Partake different activities in this most visited tourist 
+							spot. </i></figcaption>
+							</figure>
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+							<h3> Bohol's Chocolate Hills </h3>
+							<figure>
+							<img src="imageshtml/bohol.jpg" alt="Bohol's Chocolate Hills" style="max-width:100%; height:auto;">
+							<figcaption><i> Indulge the unique landscape of Bohol's Chocolate Hills! It turns brown as chocolate
+							in dry summer, Be sure to check it out!</i></figcaption>
+							</figure>
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+							<h3> The Ruins </h3>
+							<figure>
+							<img src="imageshtml/theruins.jpg" alt="The Ruins" style="max-width:100%; height:auto;">
+							<figcaption><i> Located in the Negros Occidental, considered as the Taj Mahal of the Philippines,
+							an architecture that was establish in the name of love. </i></figcaption>
+							</figure>
+							</center>							
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		
+		<!-- Mindanao Section for tourist spots with the use of table, figures, and 
+		figcaptions that helps describe the different sceneries of Mindanao -->
+		<section id="mindanao">
+			<div class="section-inner">
+				<h1> Tour-list Spot of Mindanao </h1>
+				<table class="tourist-spots">
+					<tr>
+						<td>
+							<center>
+							<h3> Siargao Cloud9 </h3>
+							<figure>
+							<img src="imageshtml/cloud9.jpg" alt="Siargao Cloud9" style="max-width:100%; height:auto;">
+							<figcaption><i> Famous for its best surfing destinations and honeymoon destinations. There are plenty 
+							of surfing schools here that ranges from different skill set that you can enjoy. </i></figcaption>
+							</figure>
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+							<h3> Philippine Eagle Center </h3>
+							<figure>
+							<img src="imageshtml/eagle.jpg" alt="Philippine Eagle Center" style="max-width:100%; height:auto;">
+							<figcaption><i> Visiting to the majestic habitat of the Philippine eagles, the main purpose
+							of the center is to educate guests to preserve wildlife. </i></figcaption>
+							</figure>
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+							<h3> Whitewater Rafting </h3>
+							<figure>
+							<img src="imageshtml/cdo.jpeg" alt="Whitewater Rafting" style="max-width:100%; height:auto;">
+							<figcaption><i> Known as the whitewater rafting capital of the Philippines. It takes up 48km
+							with over 59 rapids in Cagayan River. Make sure to visit during July to December to experience 
+							the strong water current. </i></figcaption>
+							</figure>
+							</center>							
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		
+		<!-- References section uses a cite format to grasp the italic features which is
+		common to references area-->
+		<section id="references">
+			<div class="section-inner">
+				<div class="ref-container">
+					<h1> References </h1>
+					<br>
+					<cite>
+						Arcadio, R. G. (n.d.). Top 18 must-visit tourist spots in Mindanao: Beaches, islands, waterfalls. Guide to the Philippines. Retrieved December 2, 2022, 
+						from https://guidetothephilippines.ph/articles/what-to-experience/mindanao-tourist-spots#3-whitewater-rafting-cagayan-de-oro <br><br>
+						
+						Briney, A. (2019, September 16). The Philippines: Geography and fact sheet. ThoughtCo. Retrieved December 2, 2022, 
+						from https://www.thoughtco.com/geography-of-the-philippines-1435646#:~:text=Geography%20and%20Climate%20of%20the,lowlands%2C%20depending%20on%20the%20island. <br><br>
+						
+						Cybulskie, P. (n.d.). 15 must-visit visayas tourist spots: Boracay White Beach, Cebu Diving, Bohol countryside. Guide to the Philippines. 
+						Retrieved December 2, 2022, from https://guidetothephilippines.ph/articles/what-to-experience/visayas-tourist-spots <br><br>
+						
+						Drogin, B. (2018, November 2). A forgotten World War II horror in the Philippines is revealed in 'rampage'. Los Angeles Times. Retrieved December 2, 2022, 
+						from https://www.latimes.com/books/la-ca-jc-book-review-rampage-20181102-story.html#:~:text=Countless%20women%20were%20raped%20and,in%20convents%2C%20schools%20and%20prisons. <br><br>
+						
+						Faelagmao, J. K. (2016, March 10). Summary of Spanish colonization in the Philippines. Summary of Spanish Colonization in the Philippines. Retrieved December 2, 2022, 
+						from https://janfaelagmao0021.wordpress.com/2016/03/10/summary-of-spanish-colonization-in-the-philippines/ <br><br>
+						
+						Herrera, D. R. (2020, May 28). The Philippines: An overview of the colonial era. Association for Asian Studies. 
+						Retrieved December 2, 2022, from https://www.asianstudies.org/publications/eaa/archives/the-philippines-an-overview-of-the-colonial-era/ <br><br>
+						
+						Jain, P. (2021, March 1). Culture of the Philippines - the complete guide. Holidify. Retrieved December 2, 2022, 
+						from https://www.holidify.com/pages/culture-of-philippines-5557.html <br><br>
+						
+						Office of the Historian. (n.d.). U.S. Department of State. Retrieved December 2, 2022, 
+						from https://history.state.gov/milestones/1899-1913/war <br><br>
+						
+						The Philippines and the University of Michigan. (n.d.). The Philippines: Historical overview · the Philippines and the University of Michigan, 1870-1935 · Philippines. 
+						Retrieved December 2, 2022, from https://philippines.michiganintheworld.history.lsa.umich.edu/s/exhibit/page/the-philippines-historical-overview <br><br>
+						
+						Tek-Ing, J. (n.d.). Philippines Map &amp; Geography Guide: Top Destinations in Luzon, Visayas, Mindanao. Guide to the Philippines. Retrieved December 2, 2022, 
+						from https://guidetothephilippines.ph/articles/ultimate-guides/philippines-geography-map-top-destinations-luzon-visayas-mindanao#manila <br><br>
+						
+						World Population Review. (n.d.). Philippines population 2022 (live). Retrieved December 2, 2022, 
+						from https://worldpopulationreview.com/countries/philippines-population <br>
+					</cite>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<!-- Footer area which is divided into divs that displays a list of contents -->
+	<footer>
+		<div class="footer-container">
+			<div class="container">
+				<h3> About Philippines </h3>
+				<ul>
+					<li><a href="#history"> History </a></li>
+					<li><a href="#geography"> Geography and Environment </a></li>
+					<li><a href="demographics"> Demographics </a></li>
+					<li><a href="culture"> Culture </a></li>
+				</ul>
+			</div>
+			<div class="container">
+				<h3> Tourist Attractions </h3>
+				<ul>
+					<li><a href="#luzon"> Luzon </a></li>
+					<li><a href="#visayas"> Visayas </a></li>
+					<li><a href="#mindanao"> Mindanao </a></li>
+				</ul>
+			</div>
+			<div class="container">
+				<h3><a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/VideoGallery.html"> Video Gallery </a></h3>
+			</div>
+			<div class="container">
+				<h3><a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/LogIn.html"> Log-in </a></h3>
+			</div>
+			<div class="container">
+				<h3><a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/ContactUs.html"> Contact Us </a></h3>
+			</div>
+		</div>
+		<!-- Copyright Feature -->
+		<center>
+		<p> Copyright @ 2022. All Rights Reserved. </p>
+		</center>
+	</footer>
+</body>
+</html>

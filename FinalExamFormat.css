@@ -1,0 +1,289 @@
+	body{
+		margin:0px;
+		margin-top:0px;}
+	
+	/*border box allows the content to have padding
+	and border in the width and height*/
+	*{
+	  box-sizing: border-box;}
+	
+	/* header is fixed in its position while 
+	scrolling through the website*/
+	header{
+		position:fixed;
+		display:flex;
+		top:0px;
+		left:0px;
+		right:0px;
+		height:65px;
+		background-color:tan;
+		padding:10px;
+		width:100%;}
+	
+	header img{
+		width:100%;
+		padding-left:10px;}
+	
+	/* format for my clock feature */
+	.datetime{
+		color:white;
+		padding:7px;
+		margin-left:auto;}
+			
+	.date{
+		font-family:"Arial", sans-serif;
+		font-weight:bold;
+		text-align:center;}
+			
+	.time{
+		font-family:"Courier New", monospace;
+		font-weight:bold;
+		text-align:center;}
+	
+	/* Fixed sidenav that stays while you 
+	scroll through the web page*/
+	.sidenav {
+		margin-top:65px;
+		height: 100%;
+		width: 15%;
+		position:fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		padding-top: 20px;
+		font-family:'Arial', sans-serif;
+		font-weight:bold;}
+
+	/* Style the sidenav links and the dropdown button */
+	.sidenav a, .dropdown-btn {
+		padding: 6px 8px 6px 16px;
+		text-decoration: none;
+		font-size: 16px;
+		color: white;
+		display: block;
+		border: none;
+		background: none;
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		outline: none;
+		font-family:'Arial', sans-serif;
+		font-weight:bold;}
+	
+	/* hover features in menu */
+	.sidenav a:hover, .dropdown-btn:hover {
+		color: black;
+		background-color:tan;}
+
+	.dropdown-container {
+		display: none;
+		background-color: #262626;
+		padding-left: 8px;}
+
+	.fa-caret-down {
+		float: right;
+		padding-right: 8px;}
+	
+	/* formats for my history 
+	contents and display */
+	#history table{
+		margin:10px;}
+	
+	#history td{
+		border:none;}
+	
+	#history img{
+		display:block;
+		width:100%;
+		height:auto%;
+		background-color:beige;
+		padding:5px;}
+	
+	/* formats for my geography 
+	image and display */	
+	#geography img{
+		border:2px solid black;
+		background-color:beige;
+		padding:0px;
+		margin-left:auto;
+		margin-right:auto;
+		width:80%;
+		height:auto;}
+		
+	/* formats for my culture 
+	image and display */
+	#culture img{
+		background-color:beige;
+		padding:10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		width:80%;
+		height:auto;}
+	
+	main{
+		margin-top:65px;
+		margin-left:15%;
+		margin-right:0px;
+		width:85%;
+		height:100%;}
+	
+	section{
+		border-top: 3px solid black;
+		border-bottom: 3px solid black;
+		border-right:none;
+		border-left:none;
+		display:flex;
+		justify-content:center;
+		text-align:justify;
+		text-indent:30px;
+		padding:10px;
+		font-family:'Georgia', serif;
+		background-color:wheat;
+		width:100%;
+		height:auto;}
+	
+	h1{
+		text-align:center;
+		border-bottom:1px solid black;
+		padding:10px 10px;}
+	
+	/* formats for my demographics 
+	contents and display */
+	#demographics ul{
+		list-style-type:none;}
+	
+	#demographics table td th{
+		border:2px solid black;
+		border-collapse: collapse;
+		margin:10px;
+		height:auto;
+		width:100%;}
+	
+	#demographics th{
+		padding:10px 10px;
+		background-color:tan;}
+	
+	#demographics td{
+		padding:10px 30px;
+		background-color:beige;}
+		
+	#demographics img{
+		margin-top:30px;
+		margin-bottom:30px;
+		margin:auto;
+		width:100%;
+		max-width:400px;
+		height:auto;}
+	
+	/* formats for my luzon 
+	section contents and display */
+	#luzon table{
+		border:2px solid black;
+		border-collapse: collapse;
+		margin:50px;
+		background-color:beige;}
+	
+	/* formats for my visayas 
+	section contents and display */
+	#visayas table{
+		border:2px solid black;
+		border-collapse: collapse;
+		margin:50px;
+		background-color:beige;}
+	
+	/* formats for my mindanao 
+	section contents and display */
+	#mindanao table{
+		border:2px solid black;
+		border-collapse: collapse;
+		margin:50px;
+		background-color:beige;}
+	
+	/* formats for my references */
+	#references cite{
+		font-family:'Georgia', serif;
+		font-style:italic;
+		font-weight:italic;
+		font-size:1vw;
+		text-align:justify;
+		text-justify:inter-word;}
+	
+	.ref-container{
+		padding:20px;
+		width:100%;
+		height:auto;}
+	
+	/* formats for my footer area */
+	footer{
+		margin-top:0px;
+		margin-bottom:0px;
+		margin-right:0px;
+		margin-left:15%;
+		padding:5px;
+		background-color:tan;
+		display:static;
+		font-family:'Georgia', serif;
+		height:auto;}
+	
+	.footer-container{
+		display:flex;
+		padding:0px;
+		margin:0px;
+		text-align:center;
+		width:100%;
+		height:auto;}
+	
+	.footer-container div.container{
+		padding-left:20px;
+		width:100%;
+		list-style-type:none;
+		text-decoration:none;
+		text-align:left;}
+	
+	ul{
+		list-style-type:none;
+		padding-left:0px;}
+	
+	li a, h3 a{
+		text-decoration:none;
+		text-align:left;}
+	
+	h3 a{
+		color:black;}
+	
+	li a{
+		color:beige;}
+	
+	li a:hover:not(.active){
+		background-color:black;
+		color:white;}
+	
+	/* formats for my video gallery 
+	section contents and display */
+	#gallery table {
+		margin:10px;
+		table-layout:fixed;
+		border-collapse:collapse;}
+		
+	#gallery td{
+		padding:5px;
+		border:0px;}
+	
+	#gallery iframe{
+		background-color:rosybrown;
+		padding: 10px;
+		text-align: center;}
+	
+	/* media screen allows the feature of
+	responsive website function*/
+	@media screen and (max-width: 600px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 8px;}
+		.sidenav button {font-size: 8px;}
+		.datetime{font-size:12px;}
+		#demographics{display:block;}
+		#gallery td{display:block;}
+		#history td{display:block;}
+		.footer-container{display:block;}
+		section{height:100%;}}

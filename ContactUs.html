@@ -1,0 +1,204 @@
+<!-- IIT406 = Computer Programming 3 -->
+<!-- Luis Aldrin M. Miraran
+	 IT Student
+	 1st Semester, AY 2022-2023 -->
+<!-- Final Exam - Contact Us -->
+
+<!DOCTYPE html>
+<html lang='en' dir="ltr">
+<html>
+<head>
+	<title> Contact Us </title>
+	<!-- Using of viewport format to vary sizes according to device width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Character set that covers all characters and symbols across the world -->
+	<meta charset="utf-8">
+	<!-- style sheet that is used for icons and css format styles -->
+	<link rel="stylesheet" href="FinalExamFormat.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- The use of script function to various website properties
+	from clock, sumbit validation, and dropdown menu-->
+	<script src="new 1.js"></script>
+	<!-- The internal style for my contact us contents -->
+	<style>
+		#contacts table{
+			border:2px solid black;
+			padding: 50px 50px;
+			width:100%;
+			margin:20px;}
+			
+		label{
+			font-weight:bold;}
+			
+		#fname, #lname, #email, #comment{
+			padding:12px 18px;
+			margin:10px 0px;
+			border:1px solid grey;
+			width:100%;}
+			
+		.submitbutton{
+			background-color:#00a550;
+			color:white;
+			border:none;
+			width:100%;
+			padding: 15px 20px;
+			margin:5px 0px;
+			cursor:pointer;}
+			
+		#contacts{
+			background-image:linear-gradient(rgba(255,255,255,0.60), 
+			rgba(255,255,255,0.60)), url("imageshtml/history.jpg");
+			
+			background-size:cover;
+			background-position:center center;
+			background-repeat:no repeat;
+			background-attachment:fixed;}
+			
+		th{
+			font-size:40px;
+			text-align:center;
+			border-bottom:5px solid black;
+			background-color:beige;}
+	</style>
+<head>
+<body onload="initClock()">
+	<!-- website header displaying the real time clock and logos -->
+	<header>
+		<a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/Home.html" style="display:flex;">
+		<img src="imageshtml/coatOfArms.png">
+		<img src="imageshtml/philLogo.png">
+		</a>
+		
+		<div class="datetime">
+			<div class="date">
+				<span id="dayname">Day</span>,
+				<span id="month">Month</span>
+				<span id="daynum">00</span>,
+				<span id="year">Year</span>
+			</div>
+			<div class="time">
+				<span id="hour">00</span>:
+				<span id="minutes">00</span>:
+				<span id="seconds">00</span>
+				<span id="period">AM</span>
+			</div>
+		</div>
+	</header>
+	
+	<!-- the main division of content of my html -->
+	<main>
+		<!-- sidebar w/ icons features with the application of 
+		scripting for the drop down button and menu. This directs 
+		you to different sections of the page and other html pages -->
+		<div class="sidenav">
+			<button class="dropdown-btn"> About Philippines 
+			<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="#history"> History </a>
+				<a href="#geography"> Geography and Environment </a>
+				<a href="#demographics"> Demographics </a>
+				<a href="#culture"> Culture </a>
+			</div>
+			<button class="dropdown-btn"> Tourist Attractions 
+			<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="#luzon"> Luzon </a>
+				<a href="#visayas"> Visayas </a>
+				<a href="#mindanao"> Mindanao </a>
+			</div>
+			<a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/VideoGallery.html"><i class="fa fa-fw fa-youtube-play"></i> Video Gallery </a>
+			<a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/LogIn.html"><i class="fa fa-fw fa-user"></i> Log-In </a>
+			<a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/ContactUs.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+		</div>
+		
+		<!-- Example of scripting for my dropdown menu-->
+		<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+				dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+		  });
+		}
+		</script>
+		
+		<!-- Contact Us uses a form that requires user input -->
+		<section id="contacts">
+			<table>
+				<tr>
+					<th> Contact Us </th>
+				</tr>
+				<tr>
+					<td>
+						<form action="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/Home.html#history" target="_self">
+							<br>
+							<label for='fname'> First Name : </label><br>
+							<input type='text' id='fname' name="fname" placeholder="Enter First Name" maxlength="40" required>
+							<br>
+							
+							<label for='lname'> Last Name  : </label><br>
+							<input type='text' id='lname' name="lname" placeholder="Enter Last Name" maxlength="40" required>
+							<br>
+							
+							<label for='email'> E-mail Address  : </label><br>
+							<input type='text' id='email' name="email" placeholder="Enter E-mail Address" maxlength="40" required>
+							<br>
+							
+							<label for='comment'> Comment/s  : </label><br>
+							<textarea id="comment" name='comment' rows='10' cols='30' placeholder="Enter comment/s" required></textarea>
+							<br>
+							
+							<button type="submit" class="submitbutton"> Submit </button><br>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</main>
+	
+	<!-- Footer area which is divided into divs that displays a list of contents -->
+	<footer>
+		<div class="footer-container">
+			<div class="container">
+				<h3> About Philippines </h3>
+				<ul>
+					<li><a href="#history"> History </a></li>
+					<li><a href="#geography"> Geography and Environment </a></li>
+					<li><a href="demographics"> Demographics </a></li>
+					<li><a href="culture"> Culture </a></li>
+				</ul>
+			</div>
+			<div class="container">
+				<h3> Tourist Attractions </h3>
+				<ul>
+					<li><a href="#luzon"> Luzon </a></li>
+					<li><a href="#visayas"> Visayas </a></li>
+					<li><a href="#mindanao"> Mindanao </a></li>
+				</ul>
+			</div>
+			<div class="container">
+				<h3><a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/VideoGallery.html"> Video Gallery </a></h3>
+			</div>
+			<div class="container">
+				<h3><a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/LogIn.html"> Log-in </a></h3>
+			</div>
+			<div class="container">
+				<h3><a href="file:///C:/Users/Luis%20Aldrin%20Miraran/Documents/School%20Files/1ST%20SEM%20SY%202022-2023/IIT406%20-%20Computer%20Programming%203%20-%20Web%20Development%20(wLab)/New%20folder/ContactUs.html"> Contact Us </a></h3>
+			</div>
+		</div>
+		<!-- Copyright Feature -->
+		<center>
+		<p> Copyright @ 2022. All Rights Reserved. </p>
+		</center>
+	</footer>
+</body>
+</html>
